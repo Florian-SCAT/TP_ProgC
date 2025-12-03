@@ -34,4 +34,12 @@ int main(void) {
     // Ajouter str2 après str1
     j = 0;
     while (str2[j] != '\0') {
-        concat[i] = st
+        concat[i] = str2[j];
+        i++;
+        j++;
+    }
+    concat[i] = '\0'; // terminer la chaîne concaténée
+    printf("Concaténation str1 + str2 : %s\n", concat);
+
+    return 0;
+}
