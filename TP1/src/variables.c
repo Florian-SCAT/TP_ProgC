@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(void) {
     // ----- CHAR -----
     char c = 'A';
