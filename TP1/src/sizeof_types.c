@@ -1,12 +1,13 @@
 int main(){
-printf("char: %zu", sizeof(char));
-printf("signed char: %zu", sizeof(signed char));
-printf("unsigned char: %zu", sizeof(unsigned char));
+printf("char: %zu\n", sizeof(char));
+printf("signed char: %zu\n", sizeof(signed char));
+printf("unsigned char: %zu\n", sizeof(unsigned char));
 
 
 
 
   return 0;}
+
 
 
 
