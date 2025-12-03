@@ -33,6 +33,32 @@ int main(void) {
 
         case '%':
             if (num2 != 0) {
-                result = num1 %
+                result = num1 % num2;
+                printf("%d %% %d = %d\n", num1, num2, result);
+            } else {
+                printf("Erreur : modulo par zéro\n");
+            }
+            break;
 
+        case '&':
+            result = num1 & num2;
+            printf("%d & %d = %d\n", num1, num2, result);
+            break;
 
+        case '|':
+            result = num1 | num2;
+            printf("%d | %d = %d\n", num1, num2, result);
+            break;
+
+        case '~':
+            result = ~num1;
+            printf("~%d = %d\n", num1, result);
+            break;
+
+        default:
+            printf("Opérateur non reconnu.\n");
+            break;
+    }
+
+    return 0;
+}
