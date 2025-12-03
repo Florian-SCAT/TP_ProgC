@@ -2,8 +2,8 @@
 
 int main(void) {
     // Tableaux pour les noms et prénoms
-    char noms[5][20] = {"Dupont", "Martin", "Nguyen", "Ali", "Petit"};
-    char prenoms[5][20] = {"Jean", "Marie", "Linh", "Sara", "Luc"};
+    char noms[5][20] = {"Scat", "Martin", "Pauline", "Ali", "Boris"};
+    char prenoms[5][20] = {"Florian", "Marie", "Linh", "Sara", "Luc"};
 
     // Tableau pour les adresses
     char adresses[5][50] = {
@@ -34,3 +34,4 @@ int main(void) {
 
     return 0;
 }
+
