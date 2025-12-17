@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "operator.c" // On inclut operator.c pour accéder aux fonctions
+#include "operator.h" // Inclut les prototypes des fonctions
 
 int main(int argc, char *argv[]) {
     if (argc < 3) {
@@ -25,33 +25,25 @@ int main(int argc, char *argv[]) {
 
     switch(op) {
         case '+':
-            resultat = addition(a, b);
+            resultat = somme(a, b);
             break;
         case '-':
-            resultat = soustraction(a, b);
+            resultat = difference(a, b);
             break;
         case '*':
-            resultat = multiplication(a, b);
+            resultat = produit(a, b);
             break;
         case '/':
-            if (b == 0) {
-                printf("Erreur : Division par zéro.\n");
-                return 1;
-            }
-            resultat = division(a, b);
+            resultat = quotient(a, b);
             break;
         case '%':
-            if (b == 0) {
-                printf("Erreur : Modulo par zéro.\n");
-                return 1;
-            }
             resultat = modulo(a, b);
             break;
         case '&':
-            resultat = et_logique(a, b);
+            resultat = et_bit(a, b);
             break;
         case '|':
-            resultat = ou_logique(a, b);
+            resultat = ou_bit(a, b);
             break;
         case '~':
             resultat = negation(a);
